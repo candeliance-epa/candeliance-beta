@@ -4,7 +4,7 @@
     --dark: #333;
 }
 
-/* BODY */
+/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,45 +16,32 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+
+    padding: 15px 40px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
     background: white;
-    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 /* LOGO */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
 .logo img {
-    height: 70px;
-}
-
-.logo span {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #5BA6C7;
+    height: 90px;
 }
 
 /* MENU */
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #333;
+    color: var(--dark);
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #5BA6C7;
-}
-``
-
-nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: var(--dark);
+    color: var(--blue);
 }
 
 /* HERO */
@@ -65,11 +52,20 @@ nav a {
     color: white;
 }
 
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    opacity: 0.9;
+}
+
 /* SECTION */
 .section {
     max-width: 1100px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 /* GRID */
@@ -81,8 +77,23 @@ nav a {
 
 /* CARD */
 .card {
-    border-radius: 10px;
+    text-align: center;
     padding: 25px;
+    border-radius: 12px;
+    background: white;
     box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
-``
+
+/* LOGOS PARTENAIRES */
+.card img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+}
