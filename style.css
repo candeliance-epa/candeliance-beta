@@ -108,3 +108,22 @@ footer {
     padding: 40px;
     color: #777;
 }
+.catalog-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+
+    font-size: 0.9rem;
+    text-decoration: none;
+
+    border: 1px solid #5BA6C7;
+    color: #5BA6C7;
+    border-radius: 30px;
+
+    transition: all 0.25s ease;
+}
+
+.catalog-btn:hover {
+    background: #5BA6C7;
+    color: white;
+}
