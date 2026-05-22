@@ -97,9 +97,11 @@ nav a:hover {
 
 /* TITRES PARTENAIRES */
 h3 {
+    text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
     color: var(--blue);
+    width: 100%;
 }
 
 /* FOOTER */
@@ -126,4 +128,15 @@ footer {
 .catalog-btn:hover {
     background: #5BA6C7;
     color: white;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes fixes */
+    gap: 30px;
+    justify-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
 }
