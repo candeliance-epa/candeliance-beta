@@ -95,3 +95,16 @@ footer {
     text-align: center;
     padding: 40px;
 }
+
+.hero h1 {
+    font-size: 1.8rem;   /* ✅ plus petit */
+    line-height: 1.4;    /* ✅ espace entre lignes */
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero p {
+    font-size: 0.95rem;  /* ✅ plus petit */
+    max-width: 800px;
+    margin: 20px auto 0;
+}
