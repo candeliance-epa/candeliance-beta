@@ -140,3 +140,6 @@ footer {
     width: 100%;
     max-width: 300px;
 }
+.card {
+    min-height: 200px;
+}
