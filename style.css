@@ -6,73 +6,16 @@
 /* GLOBAL */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: var(--dark);
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    position: sticky;
-    top: 0;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* LOGO */
-.logo img {
-    height: 90px;
-}
-
-/* MENU */
-nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 500;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 120px 20px;
-    background: linear-gradient(to right, var(--blue), #3a8ca9);
-    color: white;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    opacity: 0.9;
-    font-size: 1.1rem;
-}
-
-/* SECTIONS */
-.section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 80px 20px;
+    font-family: Arial;
 }
 
 /* TITRES */
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 h3 {
     text-align: center;
-    margin: 50px 0 20px;
     color: var(--blue);
 }
 
-/* GRID PRO */
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -83,7 +26,7 @@ h3 {
 /* CARTES */
 .card {
     width: 100%;
-    max-width: 280px;
+    max-width: 260px;
     min-height: 220px;
 
     display: flex;
@@ -91,12 +34,11 @@ h3 {
     align-items: center;
     justify-content: center;
 
-    text-align: center;
-    padding: 25px;
+    padding: 20px;
 
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
 /* LOGOS */
@@ -104,32 +46,20 @@ h3 {
     width: 120px;
     height: 80px;
     object-fit: contain;
-    margin-bottom: 15px;
 }
 
 /* BOUTON */
 .catalog-btn {
     margin-top: 15px;
-    padding: 10px 20px;
-
-    font-size: 0.9rem;
-    text-decoration: none;
-
+    padding: 10px 18px;
     border: 1px solid var(--blue);
     color: var(--blue);
-    border-radius: 25px;
-
-    transition: all 0.2s ease;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.2s;
 }
 
 .catalog-btn:hover {
     background: var(--blue);
     color: white;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 40px;
-    color: #777;
 }
