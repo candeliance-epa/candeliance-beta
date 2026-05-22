@@ -6,38 +6,77 @@
 /* GLOBAL */
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
 }
 
-/* TITRES */
-h3 {
-    text-align: center;
+/* HEADER PREMIUM */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo img {
+    height: 90px;
+}
+
+/* MENU */
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+nav a:hover {
     color: var(--blue);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, var(--blue), #3a8ca9);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    opacity: 0.9;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
 }
 
 /* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
-    justify-items: center;
 }
 
 /* CARTES */
 .card {
-    width: 100%;
-    max-width: 260px;
-    min-height: 220px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    text-align: center;
     padding: 20px;
-
-    background: white;
     border-radius: 10px;
+    background: white;
     box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
@@ -48,18 +87,59 @@ h3 {
     object-fit: contain;
 }
 
-/* BOUTON */
-.catalog-btn {
-    margin-top: 15px;
-    padding: 10px 18px;
-    border: 1px solid var(--blue);
-    color: var(--blue);
-    border-radius: 30px;
+/* ICÔNE PDF */
+.card a:last-child {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
     text-decoration: none;
-    transition: 0.2s;
+}
+
+/* TITRES PARTENAIRES */
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--blue);
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+}
+.catalog-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+
+    font-size: 0.9rem;
+    text-decoration: none;
+
+    border: 1px solid #5BA6C7;
+    color: #5BA6C7;
+    border-radius: 30px;
+
+    transition: all 0.25s ease;
 }
 
 .catalog-btn:hover {
-    background: var(--blue);
+    background: #5BA6C7;
     color: white;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes fixes */
+    gap: 30px;
+    justify-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+}
+.card {
+    min-height: 200px;
 }
