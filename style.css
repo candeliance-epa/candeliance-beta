@@ -1,6 +1,5 @@
 :root {
     --blue: #5BA6C7;
-    --yellow: #E8B33A;
     --dark: #333;
 }
 
@@ -37,11 +36,6 @@ nav a {
     margin-left: 25px;
     text-decoration: none;
     color: var(--dark);
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: var(--blue);
 }
 
 /* HERO */
@@ -50,15 +44,6 @@ nav a:hover {
     padding: 120px 20px;
     background: linear-gradient(to right, var(--blue), #3a8ca9);
     color: white;
-}
-
-.hero h1 {
-    font-size: 2.6rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    opacity: 0.9;
 }
 
 /* SECTION */
@@ -75,7 +60,7 @@ nav a:hover {
     gap: 40px;
 }
 
-/* CARD */
+/* CARDS */
 .card {
     text-align: center;
     padding: 25px;
@@ -84,11 +69,19 @@ nav a:hover {
     box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
-/* LOGOS PARTENAIRES */
+/* LOGOS */
 .card img {
     width: 120px;
     height: 80px;
     object-fit: contain;
+}
+
+/* PDF ICON */
+.catalog-icon {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /* FOOTER */
@@ -97,3 +90,4 @@ footer {
     padding: 40px;
     color: #777;
 }
+``
