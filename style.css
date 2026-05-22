@@ -1,1 +1,61 @@
+:root {
+    --blue: #5BA6C7;
+    --yellow: #E8B33A;
+    --dark: #333;
+}
 
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, var(--blue), #3a8ca9);
+    color: white;
+}
+
+/* SECTION */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+/* CARD */
+.card {
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+``
