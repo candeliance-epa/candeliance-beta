@@ -248,3 +248,68 @@ footer {
 .contact-form button:hover {
     transform: scale(1.03);
 }
+
+/* ✅ VERSION MOBILE */
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 90px; /* un peu plus petit sur mobile */
+    }
+
+    /* MENU */
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 0.95rem;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* SECTIONS */
+    .section {
+        padding: 50px 15px;
+    }
+
+    /* GRID → 1 colonne */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CARTES */
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+``
