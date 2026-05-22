@@ -6,6 +6,7 @@
     <title>Contact - Candeliance EPA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +14,7 @@
 
 <header>
     <div class="logo">
-        <img src="logo.png" alt="Candeliance">
+        <img src="logo.png" alt="Logo">
     </div>
 
     <nav>
@@ -48,9 +49,7 @@
                 </a>
             </p>
 
-            <p>
-                Réponse rapide sous 24h
-            </p>
+            <p>Réponse rapide sous 24h</p>
         </div>
 
         <!-- FORMULAIRE -->
@@ -76,7 +75,7 @@
     © Candeliance‑EPA
 </footer>
 
-<!-- ✅ EMAILJS SCRIPT -->
+<!-- ✅ EMAILJS -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
 <script>
@@ -87,10 +86,14 @@ window.addEventListener("load", function () {
     document.querySelector(".contact-form").addEventListener("submit", function(e) {
         e.preventDefault();
 
-        emailjs.sendForm(
+        emailjs.send(
             "service_8pmfnjd",
             "template_ncq295j",
-            this
+            {
+                name: this.name.value,
+                email: this.email.value,
+                message: this.message.value
+            }
         )
         .then(function() {
             alert("Message envoyé ✅");
