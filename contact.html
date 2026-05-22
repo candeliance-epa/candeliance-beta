@@ -8,21 +8,18 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min
 <script>
 (function(){
-    emailjs.init("-gXcBeTj9jMUzvS4"); // ✅ ta clé publique
+    emailjs.init("-gXcBeTj9jMUzvS4");
 })();
 
 document.querySelector(".contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "service_8pmfnjd",       // ✅ ton service
-        "template_ncq295j",      // ✅ ton template
+        "service_8pmfnjd",
+        "template_ncq295j",
         this
     )
     .then(function() {
@@ -33,6 +30,9 @@ document.querySelector(".contact-form").addEventListener("submit", function(e) {
     });
 });
 </script>
+
+<body>
+
 
 <header>
     <div class="logo">
