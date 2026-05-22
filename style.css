@@ -11,18 +11,45 @@ body {
     color: var(--dark);
 }
 
-/* HEADER */
+/* HEADER PREMIUM */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 25px 40px;
-    border-bottom: 1px solid #eee;
     align-items: center;
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .logo img {
-    height: 50px;
+    height: 70px;
 }
+
+.logo span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #5BA6C7;
+}
+
+/* MENU */
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #5BA6C7;
+}
+``
 
 nav a {
     margin-left: 25px;
