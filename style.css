@@ -156,3 +156,95 @@ footer {
     background: #3a8ca9;
 }
 ``
+
+/* ✅ EFFET PREMIUM CARTES */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* ✅ EFFET LOGO */
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* ✅ BOUTON PREMIUM */
+.catalog-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    border-radius: 30px;
+    border: 1px solid var(--blue);
+
+    color: var(--blue);
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.catalog-btn:hover {
+    background: var(--blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ✅ HERO PLUS PREMIUM */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.05);
+    transform: rotate(25deg);
+    top: -50%;
+    left: -50%;
+}
+
+/* ✅ CARTE CONTACT */
+.contact-info {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+/* ✅ FORMULAIRE PREMIUM */
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+}
+
+/* INPUT FOCUS */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--blue);
+}
+
+/* BOUTON HOVER */
+.contact-form button {
+    transition: all 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.03);
+}
