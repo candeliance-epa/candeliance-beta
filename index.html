@@ -1,82 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<title>Candeliance‑EPA</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Candeliance‑EPA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-
-:root {
-    --blue: #5BA6C7;
-    --yellow: #E8B33A;
-    --dark: #333;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 40px;
-    border-bottom: 1px solid #eee;
-}
-
-.logo {
-    color: var(--blue);
-    font-weight: bold;
-}
-
-nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: var(--dark);
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 120px 20px;
-    background: linear-gradient(to right, var(--blue), #3a8ca9);
-    color: white;
-}
-
-/* SECTION */
-.section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-}
-
-/* CARD */
-.card {
-    border: 1px solid #eee;
-    padding: 25px;
-    border-radius: 10px;
-}
-
-
-
+    <!-- Lien vers ton CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
     <div class="logo">
-    <img src="logo.png" alt="Candeliance-EPA">
-</div>
-``
+        <img src="logo.png" alt="Candeliance">
+    </div>
+
     <nav>
         <a href="#">Accueil</a>
         <a href="#">Expertises</a>
@@ -87,3 +27,54 @@ nav a {
 
 <section class="hero">
     <h1>Éclairage public & aménagement urbain</h1>
+    <p>Solutions innovantes pour les collectivités</p>
+</section>
+
+<section class="section">
+    <h2>Expertises</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Éclairage public</h3>
+            <p>Solutions LED performantes et durables.</p>
+        </div>
+
+        <div class="card">
+            <h3>Aménagement urbain</h3>
+            <p>Mobilier et structuration des espaces publics.</p>
+        </div>
+
+        <div class="card">
+            <h3>Smart City</h3>
+            <p>Gestion intelligente des infrastructures.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Partenaires</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="azuly_logo.png" alt="Azuly">
+            <p>Catalogue disponible</p>
+        </div>
+
+        <div class="card">
+            <img src="logo_semco.png" alt="SEMCO">
+            <p>Catalogue disponible</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © Candeliance‑EPA
+</footer>
+
+</body>
+
+</html>
