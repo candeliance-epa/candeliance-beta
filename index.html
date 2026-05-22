@@ -7,20 +7,15 @@
 
 <style>
 
-/* COULEURS DU LOGO */
 :root {
     --blue: #5BA6C7;
     --yellow: #E8B33A;
     --dark: #333;
-    --light: #f9f9f9;
 }
 
-/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: white;
-    color: var(--dark);
 }
 
 /* HEADER */
@@ -29,54 +24,32 @@ header {
     justify-content: space-between;
     padding: 25px 40px;
     border-bottom: 1px solid #eee;
-    align-items: center;
 }
 
 .logo {
-    font-weight: bold;
     color: var(--blue);
+    font-weight: bold;
 }
 
 nav a {
     margin-left: 25px;
     text-decoration: none;
     color: var(--dark);
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: var(--blue);
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 140px 20px;
+    padding: 120px 20px;
     background: linear-gradient(to right, var(--blue), #3a8ca9);
     color: white;
 }
 
-.hero h1 {
-    font-size: 2.6rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-/* SECTIONS */
+/* SECTION */
 .section {
     max-width: 1100px;
     margin: auto;
-    padding: 80px 20px;
-}
-
-/* TITRES */
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
+    padding: 60px 20px;
 }
 
 /* GRID */
@@ -86,3 +59,28 @@ h2 {
     gap: 40px;
 }
 
+/* CARD */
+.card {
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Candeliance‑EPA</div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Expertises</a>
+        <a href="#">Partenaires</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Éclairage public & aménagement urbain</h1>
