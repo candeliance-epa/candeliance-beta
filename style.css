@@ -25,6 +25,7 @@ header {
 /* LOGO */
 .logo img {
     height: 320px;
+    width: auto;
 }
 
 /* MENU */
