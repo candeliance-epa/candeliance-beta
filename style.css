@@ -1,6 +1,403 @@
 :root {
-    --blue: #5BA6C7;
-    --dark: #333;
+    --blue: #003D7A;      /* Bleu principal du logo */
+    --green: #8BC53F;     /* Vert du logo */
+    --orange: #C97A3A;    /* Cuivre / orange du logo */
+    --dark: #1f2937;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo img {
+    height: 200px;
+}
+
+/* MENU */
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(
+        135deg,
+        #003D7A,
+        #0054A6
+    );
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SECTION */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.card img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* BOUTON */
+.catalog-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: var(--green);
+    color: white;
+
+    border: 1px solid var(--green);
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.catalog-btn:hover {
+    background: #6AA62A;
+    border-color: #6AA62A;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 1.8rem;   /* ✅ plus petit */
+    line-height: 1.4;    /* ✅ espace entre lignes */
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero p {
+    font-size: 0.95rem;  /* ✅ plus petit */
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+/* CONTACT PREMIUM */
+.contact-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    max-width: 300px;
+}
+
+.contact-info a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+.contact-form button {
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: var(--blue);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #3a8ca9;
+}
+``
+
+/* ✅ EFFET PREMIUM CARTES */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* ✅ EFFET LOGO */
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* ✅ BOUTON PREMIUM */
+.catalog-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    border-radius: 30px;
+    border: 1px solid var(--blue);
+
+    color: var(--blue);
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.catalog-btn:hover {
+    background: var(--blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ✅ HERO PLUS PREMIUM */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ✅ CARTE CONTACT */
+.contact-info {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+/* ✅ FORMULAIRE PREMIUM */
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+}
+
+/* INPUT FOCUS */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--blue);
+}
+
+/* BOUTON HOVER */
+.contact-form button {
+    transition: all 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.03);
+}
+
+/* ✅ VERSION MOBILE */
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 90px; /* un peu plus petit sur mobile */
+    }
+
+    /* MENU */
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 0.95rem;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* SECTIONS */
+    .section {
+        padding: 50px 15px;
+    }
+
+    /* GRID → 1 colonne */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CARTES */
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+``
+/* ✅ ANIMATION LOGOS PARTENAIRES */
+.card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ✅ EFFET AU SURVOL */
+.card:hover img {
+    transform: scale(1.1); /* zoom */
+    filter: brightness(1.1); /* légèrement plus lumineux */
+}
+``
+/* GALERIE */
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE */
+.project {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* EFFET ZOOM */
+.project:hover img {
+    transform: scale(1.1);
+}
+
+/* TEXTE */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: white;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+/* LIGHTBOX */
+#lightbox {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
 }
 
 /* GLOBAL */
@@ -382,4 +779,404 @@ footer {
     font-size: 40px;
     color: white;
     cursor: pointer;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo img {
+    height: 200px;
+}
+
+/* MENU */
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, var(--blue), #3a8ca9);
+    color: white;
+}
+
+/* SECTION */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.card img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* BOUTON */
+.catalog-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: 1px solid var(--blue);
+    border-radius: 25px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.catalog-btn:hover {
+    background: var(--blue);
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 1.8rem;   /* ✅ plus petit */
+    line-height: 1.4;    /* ✅ espace entre lignes */
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero p {
+    font-size: 0.95rem;  /* ✅ plus petit */
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+/* CONTACT PREMIUM */
+.contact-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    max-width: 300px;
+}
+
+.contact-info a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+.contact-form button {
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: var(--blue);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #3a8ca9;
+}
+``
+
+/* ✅ EFFET PREMIUM CARTES */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* ✅ EFFET LOGO */
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* ✅ BOUTON PREMIUM */
+.catalog-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    border-radius: 30px;
+    border: 1px solid var(--blue);
+
+    color: var(--blue);
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.catalog-btn:hover {
+    background: var(--blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ✅ HERO PLUS PREMIUM */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ✅ CARTE CONTACT */
+.contact-info {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+/* ✅ FORMULAIRE PREMIUM */
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+}
+
+/* INPUT FOCUS */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--blue);
+}
+
+/* BOUTON HOVER */
+.contact-form button {
+    transition: all 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.03);
+}
+
+/* ✅ VERSION MOBILE */
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 90px; /* un peu plus petit sur mobile */
+    }
+
+    /* MENU */
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 0.95rem;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* SECTIONS */
+    .section {
+        padding: 50px 15px;
+    }
+
+    /* GRID → 1 colonne */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CARTES */
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+``
+/* ✅ ANIMATION LOGOS PARTENAIRES */
+.card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ✅ EFFET AU SURVOL */
+.card:hover img {
+    transform: scale(1.1); /* zoom */
+    filter: brightness(1.1); /* légèrement plus lumineux */
+}
+``
+/* GALERIE */
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE */
+.project {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* EFFET ZOOM */
+.project:hover img {
+    transform: scale(1.1);
+}
+
+/* TEXTE */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: white;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+/* LIGHTBOX */
+#lightbox {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+h2 {
+    color: var(--blue);
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    background: var(--green);
+}
+
+h3 {
+    color: var(--blue);
 }
